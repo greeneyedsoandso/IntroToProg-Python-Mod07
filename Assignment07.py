@@ -20,25 +20,25 @@ shape2 = input('Give me a second shape: ')
 shape3 = input('Give me a third shape: ')
 color = [color1, color2, color3]
 shape = [shape1, shape2, shape3]
-print("Pickling two lists into a binary file, shapes.dat...")
+print("\nPickling two lists into a binary file, shapes.dat...")
 file = open("shapes.dat", "wb")
 pickle.dump(color, file)
 pickle.dump(shape, file)
 file.close()
-print("If you go open shapes.dat, it looks like junk inside. That's because it's not meant for humans to read,"
+print("\nIf you go open shapes.dat, it looks like junk inside. That's because it's not meant for humans to read,"
       " just computers.")
 print("\nUnpickling lists from shapes.dat...")
 file = open("shapes.dat", "rb")
 color = pickle.load(file)
 shape = pickle.load(file)
 file.close()
-print('Here is the information that was pickled.')
+print('\nHere is the information that was pickled:')
 print(color)
 print(shape)
-print('The information that was pickled is now a list in memory, and you can mix it up however you like:')
+print('\nThe information that was pickled is now a list in memory, and you can mix it up however you like:')
 print(color[0], shape[2] + ', ' + color[2], shape[1] + ', ' + color[1], shape[0])
-print("That's pickling, another way to write and read data.\n")
-print('#' * 40 + '\n')
+print("\nThat's pickling, another way to write and read data.\n")
+print('#' * 80 + '\n')
 # Demonstrate handling exceptions
 # try/except
 print('We can deal with errors. Python has built in exceptions, '
