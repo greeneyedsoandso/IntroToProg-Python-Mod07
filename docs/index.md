@@ -20,3 +20,8 @@ In the next section, I demonstrated the Exception class by asking an important q
 ![Figure 6](Screen%20Shot%202020-03-06%20at%206.21.20%20PM.png)
 The output demonstrates the custom text string, the docstring that belongs to the Exception class, and a type query to show that Exception is a Python class.
 ###Running the Demo Script
+The script ran in Terminal as expected. First the pickling section (Figure 7), then the Exceptions section (Figure 8).
+![Figure 7](Screen%20Shot%202020-03-06%20at%207.33.14%20PM.png)
+![Figure 8](Screen%20Shot%202020-03-06%20at%207.36.31%20PM.png)
+###Conclusion
+Pickling is a fast and flexible way to write and read data into compact files. Exception handling in Python is relatively simple to implement, but the subject is large enough to cover several assignments. I learned that the Python.org documentation is a good reference for me, but only after learning concepts elsewhere.
