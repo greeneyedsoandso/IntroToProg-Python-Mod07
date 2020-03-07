@@ -71,5 +71,6 @@ try:
 except Exception as e:
     print(e)
     print("\nException output: ")
-    print(f'The custom Exception text is "{e}"\nThe docstring for the Exception class is "{e.__doc__}"\nAnd the type is {type(e)}')
+    print(f'The custom Exception text is "{e}"\nThe docstring for the Exception class is "{e.__doc__}"\nAnd the type is'
+          f' {type(e)}')
 
